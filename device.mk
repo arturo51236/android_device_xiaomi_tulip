@@ -29,6 +29,9 @@ DEVICE_PATH := device/xiaomi/tulip
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
+# Gapps
+GAPPS_VARIANT := nano
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)

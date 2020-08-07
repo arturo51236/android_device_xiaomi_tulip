@@ -30,6 +30,9 @@ DEVICE_PATH := device/xiaomi/tulip
 # Assert
 TARGET_OTA_ASSERT_DEVICE := tulip
 
+# Gapps
+WITH_DEXPREOPT := true
+
 #APEX
 TARGET_ENABLE_APEX := true
 
