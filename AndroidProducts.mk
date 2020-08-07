@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_tulip.mk
+    $(LOCAL_DIR)/bootleg_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-   aosp_tulip-user \
-   aosp_tulip-userdebug \
-   aosp_tulip-eng
+   bootleg_tulip-user \
+   bootleg_tulip-userdebug \
+   bootleg_tulip-eng
