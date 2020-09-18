@@ -19,26 +19,37 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Evox stuff
+# Inherit some common Evolution-X stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit from tulip device
+# Inherit from tulip device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Some common aosp Properties
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := tulip
-PRODUCT_MANUFACTURER := Xiaomi
+# Some common AOSP Properties
 PRODUCT_NAME := aosp_tulip
+PRODUCT_DEVICE := tulip
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 6 Pro
-
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
+PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR_PRODUCT_NAME := tulip
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Maintainer Props
+EVO_DONATE_URL := https://paypal.me/pokyrocky007
+EVO_MAINTAINER := arturo51236
+EVO_SUPPORT_URL := https://t.me/EvolutionXRn6Pro
+
+# Official
+CUSTOM_BUILD_TYPE := OFFICIAL
+
+# Build Info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="coral-user 11 RP1A.200720.009 6720564 release-keys"
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
