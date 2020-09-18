@@ -1,6 +1,22 @@
 [
   {
-    "repository": "android_device_xiaomi_sdm660-common",
-    "target_path": "device/xiaomi/sdm660-common"
+    "repository": "arturo51236/android_device_xiaomi_sdm660-common",
+    "target_path": "device/xiaomi/sdm660-common",
+    "branch": "evox"
+  },
+  {
+    "repository": "arturo51236/android_vendor_xiaomi_sdm660-common",
+    "target_path": "vendor/xiaomi/sdm660-common",
+    "branch": "ten"
+  },
+  {
+    "repository": "xiaomi-sdm660/android_vendor_xiaomi_tulip",
+    "target_path": "vendor/xiaomi/tulip",
+    "branch": "ten"
+  },
+  {
+    "repository": "arturo51236/android_kernel_xiaomi_tulip",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "android-10"
   }
 ]
