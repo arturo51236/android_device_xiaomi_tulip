@@ -39,6 +39,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
 
 # Maintainer Props
 EVO_DONATE_URL := https://paypal.me/pokyrocky007
